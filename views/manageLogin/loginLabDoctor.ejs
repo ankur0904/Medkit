@@ -1,0 +1,20 @@
+<%- include("header") -%>
+
+    <div>
+        <form class="row g-3" action="/loginLabDoctorPost" method="post">
+            <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Unique Id</label>
+                <input type="text" class="form-control" id="validationDefault04" name="uniqueID" >
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Lab Examination</label>
+                <input type="text" class="form-control" id="validationDefault03" name="labExamination" >
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <%- include("footer") -%>
+

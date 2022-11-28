@@ -1,0 +1,32 @@
+<%- include("header") -%>
+
+    <div>
+        <form class="row g-3" action="/loginDoctorPost" method="post">
+            <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Unique Id</label>
+                <input type="text" class="form-control" id="validationDefault04" name="uniqueID" >
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Problems</label>
+                <input type="text" class="form-control" id="validationDefault01" name="problem" >
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Diagnosis</label>
+                <input type="text" class="form-control" id="validationDefault01" name="diagnosis" >
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Lab Examination</label>
+                <input type="text" class="form-control" id="validationDefault03" name="labExamination" >
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Medicines</label>
+                <input type="text" class="form-control" id="validationDefault04" name="medicines" >
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <%- include("footer") -%>
+

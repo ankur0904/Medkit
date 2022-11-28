@@ -1,0 +1,52 @@
+<%- include("header") -%>
+
+    <div class="container">
+
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom">Patient Data Management System</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <h2>Search</h2>
+                    <p>This section is for the searching of patient with their contact number.</p>
+                    <form action="/search" method="post">
+                        <div class="form">
+                            <input class="form-control" name="searchQuery" placeholder="Search">
+                            <!-- <label for="floatingPassword">Search</label> -->
+                        </div>
+                        <button  class="icon-link d-inline-flex align-items-center btn btn-primary" style="border-radius: 12px; margin-top: 15px">
+                            Search here
+                        </button>
+                    </form>
+                </div>
+                <div class="feature col">
+                    <h2>Add</h2>
+                    <p>This section is for the adding the patient details.</p>
+                    <form action="/add" method="post">
+                        <button  class="icon-link d-inline-flex align-items-center btn btn-primary" style="border-radius: 12px; margin-top: 15px">
+                            Add here
+                        </button>
+                    </form>
+                </div>
+                <div class="feature col">
+                    <h2>Delete</h2>
+                    <p>This section is for the deleting of patient with their contact number.</p>
+                    <form action="/delete" method="post">
+                        <div class="form">
+                            <input  class="form-control"
+                                name="searchQuery"
+                                placeholder="Delete">
+                            
+                        </div>
+                        <button  class="icon-link d-inline-flex align-items-center btn btn-danger" style="border-radius: 12px; margin-top: 15px">
+                            Delete here
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <%- include("footer") -%>

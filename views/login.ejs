@@ -1,0 +1,80 @@
+<%- include("header") -%>
+
+
+  <!-- <body class="text-center"> -->
+
+  <div class="container">
+
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">Hospital Management System</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <h2>For Receptionist</h2>
+          <p>Receptionist can login here.</p>
+          <form action="/loginReceptionist" method="post">
+            <div class="form">
+              <!-- <input class="form-control" name="searchQuery" placeholder="Search"> -->
+              <!-- <label for="floatingPassword">Search</label> -->
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
+                <label for="floatingInput">Username</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                  name="password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-success" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="feature col">
+          <h2>For Lab Doctor</h2>
+          <p>Lab Doctor can login here.</p>
+          <form action="/loginLabDoctor" method="post">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-success" type="submit">Login</button>
+          </form>
+        </div>
+        <div class="feature col">
+          <h2>For Doctor</h2>
+          <p>Doctor can login here.</p>
+          <form action="/loginDoctor" method="post">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-success" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="form-signin w-100 m-auto">
+    <form action="/loginPharmaceutical" method="post">
+      <h1 class="h3 mb-3 fw-normal">Pharmaceutical Store can login here.</h1>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
+        <label for="floatingInput">Username</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <button class="w-100 btn btn-lg btn-success" type="submit">Login</button>
+    </form>
+  </main>
+  <%- include("footer") -%>
