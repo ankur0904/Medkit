@@ -257,9 +257,9 @@ app.post("/loginPharmaceutical", function (req, res) {
         }
     });
 });
-// This is only for the production purpose 
-// This is only for the production purpose 
-// This is only for the production purpose 
+
+
+// This is only for the development purpose 
 // app.get("/register-user", function (req, res) {
 //     res.render("register-user")
 // });
