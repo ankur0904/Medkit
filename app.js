@@ -6,16 +6,14 @@ var nodemailer = require('nodemailer');
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 PDFDocument = require("pdfkit");
+require('dotenv').config()
 const saltRounds = 10;
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 // using the body parser
 app.use(bodyParser.urlencoded({ extended: true }));
-
-// mongoose.connect("mongodb+srv://<username>:<password>@clustor0.xrenqux.mongodb.net/userDB");
-// mongoose.connect("mongodb://localhost:27017/userDB");
-mongoose.connect("mongodb+srv://admin-ankur:18pepggO9d6mIyPe@cluster0.4zksoll.mongodb.net/userDB");
+mongoose.connect(`mongodb+srv://admin-ankur:${process.env.PASSWORD}@cluster0.4zksoll.mongodb.net/userDB`);
 const userSchema = new mongoose.Schema({
     email: String,
     password: String
@@ -113,7 +111,7 @@ app.post("/appointment", function (req, res) {
         service: "gmail",
         auth: {
             user: "hospital.manage.bot@gmail.com",
-            pass: "awbpdhlscahzceir"
+            pass: process.env.SECRET_PASSWORD
         }
     });
 
