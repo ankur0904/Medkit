@@ -13,9 +13,9 @@ app.set("view engine", "ejs");
 // using the body parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb+srv://<username>:<password>@clustor0.xrenqux.mongodb.net/userDB");
+// mongoose.connect("mongodb+srv://<username>:<password>@clustor0.xrenqux.mongodb.net/userDB");
 // mongoose.connect("mongodb://localhost:27017/userDB");
-
+mongoose.connect("mongodb+srv://admin-ankur:18pepggO9d6mIyPe@cluster0.4zksoll.mongodb.net/userDB");
 const userSchema = new mongoose.Schema({
     email: String,
     password: String
@@ -113,7 +113,7 @@ app.post("/appointment", function (req, res) {
         service: "gmail",
         auth: {
             user: "hospital.manage.bot@gmail.com",
-            pass: "<password>"
+            pass: "awbpdhlscahzceir"
         }
     });
 
@@ -260,23 +260,23 @@ app.post("/loginPharmaceutical", function (req, res) {
 
 
 // This is only for the development purpose 
-// app.get("/register-user", function (req, res) {
-//     res.render("register-user")
-// });
+app.get("/register-user", function (req, res) {
+    res.render("register-user")
+});
 
-// app.post("/register-user", function (req, res) {
-//     bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
-//         const newUser = new User({
-//             email: req.body.username,
-//             password: hash
-//         });
-//         newUser.save(function (err) {
-//             if (err) {
-//                 console.log(err)
-//             }
-//         });
-//     });
-// });
+app.post("/register-user", function (req, res) {
+    bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
+        const newUser = new User({
+            email: req.body.username,
+            password: hash
+        });
+        newUser.save(function (err) {
+            if (err) {
+                console.log(err)
+            }
+        });
+    });
+});
 
 app.post("/doctor", (req, res) => {
     const query = req.body.searchQuery;

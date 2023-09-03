@@ -1,7 +1,9 @@
+
+
 /* for the whole body of the webpage */
 body {
-    font-size: 20px;
-    font-family: 'Noto Serif', serif;
+    /* font-size: 20px;
+    font-family: 'Noto Serif', serif; */
 }
 
 /* For the padding of nav-bar */
@@ -81,7 +83,7 @@ h3 {
 }
 
 .pr {
-    font-family: cursive;
+    /* font-family: cursive; */
     font-size: 18px;
 }
 
@@ -134,7 +136,7 @@ h3 {
     
     font-size: medium;
     color: azure;
-    font-family: cursive;
+    /* font-family: cursive; */
     padding: 30px;
     font-size: 20px;
 }
