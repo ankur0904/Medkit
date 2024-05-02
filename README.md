@@ -7,8 +7,9 @@ This application will be a complete guide to a patient about the hospital and at
 
 ## To use the app
 
-Email: ankursingh91002@gmail.com
-Password: ankur
+**Email:** ankursingh91002@gmail.com
+
+**Password:** ankur
 
 ![Screenshot from 2024-05-02 15-41-33](https://github.com/ankur0904/Medkit/assets/98346896/a2d7bf7c-a36f-4bd8-82ba-3c897eb7cba5)
 ![Screenshot from 2024-05-02 15-41-40](https://github.com/ankur0904/Medkit/assets/98346896/b1b11ce7-2692-452a-b839-52f09a84f0f0)
