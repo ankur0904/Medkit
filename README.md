@@ -5,9 +5,12 @@ Prescriptions prescribed by the doctor will be updated which can easily be acces
 Further reports get updated in the database so that they can be examined by the doctor.
 This application will be a complete guide to a patient about the hospital and at the same time a good managing tool for management.
 
-(https://photos.app.goo.gl/FSVdrQeY5Lmabskh7)
-(https://photos.app.goo.gl/anSrugF4U8omes6UA)
-(https://photos.app.goo.gl/Rmtp8spHYiV9amkg6)
-(https://photos.app.goo.gl/yS38Pk7LTFjrYGR27)
-(https://photos.app.goo.gl/WgsG9gMGNNd4Feqv5)
-(https://photos.app.goo.gl/QnY289jhThTqWFU59)
+## To use the app
+
+Email: ankursingh91002@gmail.com
+Password: ankur
+
+![Screenshot from 2024-05-02 15-41-33](https://github.com/ankur0904/Medkit/assets/98346896/a2d7bf7c-a36f-4bd8-82ba-3c897eb7cba5)
+![Screenshot from 2024-05-02 15-41-40](https://github.com/ankur0904/Medkit/assets/98346896/b1b11ce7-2692-452a-b839-52f09a84f0f0)
+![Screenshot from 2024-05-02 15-41-48](https://github.com/ankur0904/Medkit/assets/98346896/51e8e532-0a25-4e44-8f5a-dbfe24a6983c)
+
